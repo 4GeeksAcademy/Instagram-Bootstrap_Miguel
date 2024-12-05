@@ -1,0 +1,27 @@
+El cambio de vistas funciona gracias a 3 elementos clave de Bootstrap:
+
+Los enlaces de navegación:
+
+<a class="nav-link active" data-bs-toggle="tab" href="#projectsGrid">Grid View</a>
+
+data-bs-toggle="tab" activa la funcionalidad de tabs
+href="#projectsGrid" vincula con el contenido a mostrar
+
+
+Los contenedores de contenido:
+
+<div class="tab-pane fade" id="projectsGrid">
+
+tab-pane marca el panel como parte del sistema de tabs
+fade añade animación
+show active en el panel visible por defecto
+
+
+Bootstrap.js maneja automáticamente:
+
+
+Mostrar/ocultar paneles al hacer clic
+Cambiar clase active entre tabs
+Animaciones de transición
+
+Todo esto ocurre sin necesidad de JavaScript personalizado, solo requiere incluir bootstrap.bundle.min.js.
