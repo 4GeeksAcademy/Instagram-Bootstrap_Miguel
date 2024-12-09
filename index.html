@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gallery</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <div>
+        <!-- Navbar -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        My Portfolio
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav nav-pills ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#projectsGrid">Grid View</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#projectsDetail">Detail View</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-<!-- Navbar -->
+        </nav>
+
+        <!-- Content -->
+        <div class="container my-5">
+            <div class="tab-content">
+                <!-- Grid View -->
+                <div class="tab-pane fade show active" id="projectsGrid">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">HTML</span>
+                                        <span class="badge bg-success">CSS</span>
+                                        <span class="badge bg-info">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 2</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-success">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 3</h5>
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning">Python</span>
+                                        <span class="badge bg-danger">Django</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail View -->
+                <div class="tab-pane fade" id="projectsDetail">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto mb-4">
+                            <div class="card">
+                                <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 1 Detail">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project 1</h3>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary">HTML</span>
+                                        <span class="badge bg-success">CSS</span>
+                                        <span class="badge bg-info">JavaScript</span>
+                                    </div>
+                                    <p class="card-text">This is a detailed description of Project 1. It includes
+                                        information about the technologies used, the challenges faced, and the solutions
+                                        implemented.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 mx-auto mb-4">
+                            <div class="card">
+                                <img src="https://placehold.co/600x400" class="card-img-top" alt="Project 2 Detail">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project 2</h3>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-success">Node.js</span>
+                                    </div>
+                                    <p class="card-text">Detailed description of Project 2, highlighting the key
+                                        features and technical achievements of this project.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-<!-- Content -->
-
-        <!-- Grid View -->
-        
-
-        <!-- Detail View -->
-        
-
-            <!-- Contact Form (if we have time enough)-->
-            
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
